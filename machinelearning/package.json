@@ -1,0 +1,38 @@
+{
+    "name": "machinelearning",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^1.1.0",
+        "@material-ui/icons": "^1.0.0",
+        "brain.js": "^1.2.1",
+        "lodash": "^4.17.10",
+        "proxyquire": "^2.0.1",
+        "react": "^16.4.0",
+        "react-bootstrap": "^0.32.1",
+        "react-color": "^2.14.1",
+        "react-dom": "^16.4.0",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.4",
+        "redux": "^4.0.0",
+        "rewire": "^4.0.1"
+    },
+    "scripts": {
+        "start": "node scripts/customized-config start",
+        "build": "node scripts/customized-config build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-eslint": "^8.2.3",
+        "eslint": "^4.19.1",
+        "eslint-plugin-react": "^7.7.0",
+        "less": "^3.0.4",
+        "less-loader": "^4.1.0",
+        "less-plugin-autoprefix": "^1.5.1",
+        "nodemon": "^1.17.3",
+        "redux-devtools-extension": "^2.13.2"
+    }
+}

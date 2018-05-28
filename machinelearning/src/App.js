@@ -32,20 +32,20 @@ class App extends Component {
         let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(newHex);
         return result
             ? {
-                  r: Math.round(parseInt(result[1], 16) / 2.55) / 100,
-                  g: Math.round(parseInt(result[2], 16) / 2.55) / 100,
-                  b: Math.round(parseInt(result[3], 16) / 2.55) / 100
-              }
+                r: Math.round(parseInt(result[1], 16) / 2.55) / 100,
+                g: Math.round(parseInt(result[2], 16) / 2.55) / 100,
+                b: Math.round(parseInt(result[3], 16) / 2.55) / 100
+            }
             : null;
     };
     hexToRgb = hex => {
         let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
         return result
             ? {
-                  r: parseInt(result[1], 16),
-                  g: parseInt(result[2], 16),
-                  b: parseInt(result[3], 16)
-              }
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            }
             : null;
     };
     componentToHex = c => {
@@ -61,7 +61,9 @@ class App extends Component {
         // network referenced
         newBrain.train([
             { input: { r: 0, g: 0, b: 0 }, output: { white: 1 } },
-            { input: { r: 1, g: 1, b: 1 }, output: { black: 1 } }
+            { input: { r: 1, g: 1, b: 1 }, output: { black: 1 } },
+            { input: { r: 1, g: 0.35, b: 0 }, output: { white: 1 } },
+            { input: { r: 1, g: 0.42, b: 0.42 }, output: { black: 1 } }
             // { input: { r: 1, g: 0, b: 0.68 }, output: { white: 1 } },
             // { input: { r: 0.67, g: 0.5, b: 0.5 }, output: { white: 1 } },
             // { input: { r: 0.58, g: 0.43, b: 0.43 }, output: { black: 1 } }
